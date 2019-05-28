@@ -2,7 +2,7 @@ server:
   port: 8761
 eureka:
   instance:
-    hostname: eureka-service.eu-west-1.elasticbeanstalk.com
+    hostname: ${DISCOVERY_URI:localhost}
   client:
     registerWithEureka: false
     fetchRegistry: false
