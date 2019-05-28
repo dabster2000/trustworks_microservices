@@ -12,6 +12,6 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+      defaultZone: http://eureka-service.eu-west-1.elasticbeanstalk.com:8761/eureka
   instance:
     preferIpAddress: true
