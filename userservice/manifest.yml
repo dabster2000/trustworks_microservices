@@ -1,0 +1,9 @@
+applications:
+  - name: userservice
+    instances: 1
+    random-route: true
+    memory: 160M
+    buildpacks:
+      - java_buildpack_offline
+    path: target/userservice-0.0.1-SNAPSHOT.jar
+    services:
